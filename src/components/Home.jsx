@@ -11,15 +11,15 @@ const Home = () => {
       <NavBar />
       <div className="home-text-section">
         <h1 className="primary-heading">Bienvenido a la pagina borrador</h1>
-        <p className="primary-text">Esta es una pagina de prueba de Panzofi</p>
+        <p className="primary-text">
+          Esta es una pagina de prueba de Panzof{" "}
+          <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">video</a>
+        </p>
         <button className="secondary-button">
           Click aqui uwu
           <FiArrowRight />
         </button>
-        <h1>
-          HOLA
-          <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">video</a>
-        </h1>
+        <h1>HOLA</h1>
       </div>
 
       <div className="home-image-section">
