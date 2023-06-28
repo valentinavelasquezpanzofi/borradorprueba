@@ -17,6 +17,7 @@ const Home = () => {
           <FiArrowRight />
         </button>
         <h1>
+          HOLA
           <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">video</a>
         </h1>
       </div>
