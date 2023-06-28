@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import kuromi from "../a/kuromi.png";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -12,6 +12,11 @@ import ListItemText from "@mui/material/ListItemText";
 import { HomeIcon } from "@mui/icons-material/Home";
 import { InfoIcon } from "@mui/icons-material/Info";
 import { PhoneRoundedIcon } from "@mui/icons-material/PhoneRounded";
+import ReactGA from "react-ga";
+
+useEffect(() => {
+  ReactGA.pageview(window.location.pathname);
+});
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
