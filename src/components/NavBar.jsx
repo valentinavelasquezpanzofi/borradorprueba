@@ -12,7 +12,6 @@ import ListItemText from "@mui/material/ListItemText";
 import { HomeIcon } from "@mui/icons-material/Home";
 import { InfoIcon } from "@mui/icons-material/Info";
 import { PhoneRoundedIcon } from "@mui/icons-material/PhoneRounded";
-import ReactGA from "react-ga";
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
