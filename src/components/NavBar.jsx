@@ -14,10 +14,6 @@ import { InfoIcon } from "@mui/icons-material/Info";
 import { PhoneRoundedIcon } from "@mui/icons-material/PhoneRounded";
 import ReactGA from "react-ga";
 
-useEffect(() => {
-  ReactGA.pageview(window.location.pathname);
-});
-
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [

@@ -5,8 +5,6 @@ import Mymelody from "../a/Mymelody.webp";
 import { FiArrowRight } from "react-icons/fi";
 import "../App.css";
 
-// Resto del código del componente
-
 const Home = () => {
   return (
     <div className="home-container">
