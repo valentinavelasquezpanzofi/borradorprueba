@@ -16,6 +16,9 @@ const Home = () => {
           Click aqui uwu
           <FiArrowRight />
         </button>
+        <h1>
+          <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">video</a>
+        </h1>
       </div>
 
       <div className="home-image-section">
