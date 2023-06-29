@@ -16,6 +16,27 @@ img {
   max-width: 1900px;
   margin: 0rem auto;
 }
+.video-container{
+  position: fixed;
+  transform: translate(0, -50%);
+  width:40%;
+  height: 0;
+  padding-bottom:16%;
+  top: 50%;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+
+}
+.video-container iframe{
+
+  width: 100%;
+  height: 100%;
+  position:absolute;
+ 
+}
+
+
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -33,6 +54,7 @@ nav {
 }
 .navbar-menu-container {
   display: none;
+  z-index: 2;
 }
 .navbar-links-container a {
   margin-right: 3rem;
@@ -40,6 +62,7 @@ nav {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  z-index: 2;
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
@@ -51,6 +74,7 @@ nav {
   cursor: pointer;
   font-weight: 600;
   transition: 0.2s;
+  z-index: 2;
 }
 
 .primary-button:hover {
@@ -59,11 +83,13 @@ nav {
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
+  z-index: 2;
 }
 .home-banner-container {
   position:relative;
   display: flex;
   padding-top: 3rem;
+  flex-direction: column-reverse;
 }
 .home-bannerImage-container {
  position: absolute;
@@ -78,6 +104,7 @@ nav {
   text-align: right;
   margin-top: -280px;
   max-width: 3000px;
+  z-index: 2;
   
   
   
@@ -88,12 +115,14 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  z-index: 2;
 }
 .primary-heading {
   font-size: clamp(4rem, 5vw, 4rem);
   color: #E1AEFF;
   /* line-height: 5rem; */
   max-width: 600px;
+  z-index: 2;
   
 }
 .primary-text {
@@ -101,6 +130,7 @@ nav {
   max-width: 500px;
   color: #2B2730;
   margin: 1.5rem 0rem;
+  z-index: 2;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
@@ -116,6 +146,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .secondary-button svg {
   margin-left: 0.75rem;
@@ -200,3 +231,31 @@ nav {
     max-width: 95vw;
   }
 }
+@media (max-width: 760px) {
+  .home-banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text-section {
+    order: 2;
+  }
+
+  .home-image-section {
+    order: 1;
+    text-align: center;
+  }
+
+  .video-container {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 56.25%;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 100%);
+  }
+}
+
+
+
+
